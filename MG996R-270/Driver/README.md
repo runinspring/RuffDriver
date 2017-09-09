@@ -28,14 +28,12 @@ $('#mg996r'). setAngle(angle);
 
 ### Methods
 
-#### `setAngle()`
+#### `setAngle(angle)`
 
-The function of method func().
+Set the Angle of rotation.
 
-### Properties (opt.)
-angle between 0~270 degrees, in the middle is 135 degrees.
+`angle` between 0~270 degrees, in the middle is 135 degrees.
 
-### Events (opt.)
 
 ## Supported OS
 
@@ -44,3 +42,8 @@ Test passed on Ruff v1.10.0
 ## Note
 
 Some notes about device or driver if have.
+
+- [Source](https://github.com/runinspring/RuffDriver/tree/master/MG996R-270/Driver)
+
+- [Demo](https://github.com/runinspring/RuffDriver/tree/master/MG996R-270/TestDemo)
+
