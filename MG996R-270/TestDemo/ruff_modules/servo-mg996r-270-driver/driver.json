@@ -1,0 +1,13 @@
+{
+    "models": [
+    	"MG996R"
+    ],
+    "inputs": {
+        "pwm": {
+            "type": "pwm",
+            "args": {
+                "frequency": 50
+            }
+        }
+    }
+}

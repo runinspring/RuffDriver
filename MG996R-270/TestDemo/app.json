@@ -1,0 +1,17 @@
+{
+    "devices": [
+        {
+            "id": "mada",
+            "model": "MG996R",
+            "driver": "servo-mg996r-270-driver",
+            "inputs": {
+                "pwm": {
+                    "type": "pwm",
+                    "args": {
+                        "frequency": 50
+                    }
+                }
+            }
+        }
+    ]
+}
