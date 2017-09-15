@@ -1,49 +1,49 @@
-# {device-name} Driver
+# MG996R Driver
 
-Driver description if have.
+Servo MG-996R 's Driver(0-270) description if have.
 
 ## Device Model
 
-- [{device-model}](https://rap.ruff.io/devices/{device-model})
-
-> You can name {device-model} by {model-name} like gy-30 or {chip-name}-({interface}) like ssd1306-i2c.
+- [MG996R](https://rap.ruff.io/devices/MG996R)
 
 ## Install
 
 ```sh
-> rap device add --model {device-model} --id <device-id> 
+> rap device add --model MG996R --id <device-id> 
 ```
 
 ## Demo
 
-Supposed \<device-id\> is `xxx` in the following demos.
+Supposed \<device-id\> is `mg996r` in the following demos.
 
 ```js
-$('#xxx').func();
+$('#mg996r'). setAngle(angle);
 ```
 
-> It will be better if you attach some pictures of your device demo.**
-
 <div align="center">
-<img src="https://xxx" width = "100" height = "100" alt="device demo" />
+<img src="https://rap.ruff.io/api/devices/MG996R/image?1504968374050" width = "391" height = "203" alt="device demo" />
 </div>
 
 ## API References
 
 ### Methods
 
-#### `func()`
+#### `setAngle(angle)`
 
-The function of method func().
+Set the Angle of rotation.
 
-### Properties (opt.)
+`angle` between 0~270 degrees, in the middle is 135 degrees.
 
-### Events (opt.)
 
 ## Supported OS
 
-Test passed on Ruff v1.6.0 and Ruff Lite v0.6.0
+Test passed on Ruff v1.10.0
 
 ## Note
 
 Some notes about device or driver if have.
+
+- [Source](https://github.com/runinspring/RuffDriver/tree/master/MG996R-270/Driver)
+
+- [Demo](https://github.com/runinspring/RuffDriver/tree/master/MG996R-270/TestDemo)
+

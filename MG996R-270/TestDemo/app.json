@@ -5,6 +5,15 @@
             "model": "MG996R",
             "driver": "servo-mg996r-270-driver",
             "inputs": {
+                "vcc": {
+                    "type": "power",
+                    "args": {
+                        "voltage": "5v"
+                    }
+                },
+                "gnd": {
+                    "type": "ground"
+                },
                 "pwm": {
                     "type": "pwm",
                     "args": {

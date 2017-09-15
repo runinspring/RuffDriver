@@ -6,7 +6,7 @@
     "main": "src/index.js",
     "ruff": {
         "dependencies": {
-            "servo-mg996r-270-driver": "^0.1.0"
+            "servo-mg996r-270-driver": "^0.1.4"
         },
         "version": 1
     }
