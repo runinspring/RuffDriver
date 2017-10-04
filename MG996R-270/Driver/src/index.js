@@ -19,10 +19,10 @@ module.exports = driver({
     exports: {
         setAngle: function (angle, callback) {
             // console.log("angle:", angle);
-            //0C--1ms--1/20=0.05
+            //0C--1ms--0.5/20=0.025
             //135C--1.5ms ==1.5/20=0.075
-            //270C--2ms==2/20=0.1
-            var duty = 0.05 + 0.05 * angle / 270;
+            //270C--2.5ms==2.5/20=0.125
+            var duty = 0.025 + 0.1 * angle / 270;
             this._pwm.setDuty(duty);
 
         },
