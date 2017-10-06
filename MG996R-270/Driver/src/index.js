@@ -24,8 +24,22 @@ module.exports = driver({
             //270C--2.5ms==2.5/20=0.125
             var duty = 0.025 + 0.1 * angle / 270;
             this._pwm.setDuty(duty);
-
         },
-
+        setAngle180: function (angle, callback) {
+            // console.log("angle:", angle);
+            //0C--1ms--0.5/20=0.025
+            //90C--1.5ms ==1.5/20=0.075
+            //180C--2.5ms==2.5/20=0.125
+            var duty = 0.025 + 0.1 * angle / 180;
+            this._pwm.setDuty(duty);
+        },
+        setAngle90: function (angle, callback) {
+            // console.log("angle:", angle);
+            //0C--1ms--1/20=0.05
+            //45C--1.5ms ==1.5/20=0.075
+            //90C--2ms==2/20=0.1
+            var duty = 0.05 + 0.05 * angle / 90;
+            this._pwm.setDuty(duty);
+        },
     }
 });
